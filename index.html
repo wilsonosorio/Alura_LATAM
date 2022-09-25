@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/logo_alura.png">    <!-- Imagen de la pestaña superior del navegador -->
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+            <img src="imagenes/logo.png" alt="logoAlura" class="imagen_alura">
+            <p class="titulo">BIENVENIDO A TU ENCRIPTADOR DE TEXTO</p>
+    </header>
+    <main class="encriptar">
+        <div class="contenedor_1">
+            <textarea id="input-texto" cols="60" rows="10" class="textArea" required placeholder="Ingresa aquí tu texto"></textarea>
+            <p>  Favor Ingresar solo letras minúsculas y sin acentos</p>
+            <div class="div-botones">
+                <button class="boton" onclick="btnEncriptar()" >Encriptar</button>
+                <button class="boton" onclick="btnDesencriptar()" >Desencriptar</button>
+            </div>
+        </div>
+        <div class="contenedor_2">
+            <div class="contenedor_3">
+                <div class="empty">
+                    <img src="imagenes/imagen_fondo.png" alt="fondo" class="imagen_fondo"> 
+                    <p class="texto-info">Esperando tu texto para encriptar</p>
+                </div>
+                <div class="div-resultado">
+                    <textarea id="textoFinal" cols="60" rows="10" class="textArea" readonly >ddd</textarea> 
+                    <button class="boton" onclick="btnCopiar()">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <div class="enlaces-externos">
+                <a><img  class="github" src="imagenes/logo_git.png" alt="logo_github" /></a>
+                <a><img class="linkedin" src="imagenes/logo_linkedin.png" alt="logo_linkedin"/></a>
+            </div>
+            <p>©Copyright - Alura Latam - Wilson Osorio 2022 </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
