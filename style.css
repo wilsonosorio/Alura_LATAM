@@ -2,7 +2,7 @@ html, body{
     font-family: 'Roboto', sans-serif;
     height: 100%;
     width: 100%;
-    background: linear-gradient(90deg, #0471ee,#ffffff,#7904bd 100%) ;
+    background: linear-gradient(45deg, #0471ee,#ffffff,#7904bd 100%) ;
 }
 html{
     display: flex;
